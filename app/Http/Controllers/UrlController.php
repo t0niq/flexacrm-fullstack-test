@@ -52,7 +52,7 @@ class UrlController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'title' => 'required',
-            'url' => 'required',
+            'url' => 'required|url',
             'short_url' => 'unique:urls,short_url'
         ]);
 
@@ -99,7 +99,7 @@ class UrlController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'title' => 'required',
-            'url' => 'required'
+            'url' => 'required|url'
         ]);
 
         $this->urlRepository->update($validator->validated(), Url::find($id));

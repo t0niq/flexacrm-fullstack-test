@@ -52,7 +52,7 @@
                                             </div>
                                             <div class="mb-4">
                                                 <label for="url" class="block text-gray-700 text-sm font-bold mb-2">Url:</label>
-                                                <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="url" placeholder="Enter Url" v-model="form.url" required>
+                                                <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="url" placeholder="Enter Url with http:// or https://" v-model="form.url" required>
                                                 <div v-if="$page.props.errors.title" class="text-red-500">{{ $page.props.errors.url[0] }}</div>
                                             </div>
                                         </div>
