@@ -18477,7 +18477,7 @@ var _hoisted_12 = {
   "class": "border px-4 py-2 truncate ..."
 };
 var _hoisted_13 = {
-  "class": "border px-4 py-2"
+  "class": "border px-4 py-2 truncate ..."
 };
 var _hoisted_14 = {
   "class": "border px-4 py-2"

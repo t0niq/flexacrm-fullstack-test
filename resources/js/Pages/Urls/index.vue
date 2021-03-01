@@ -28,7 +28,7 @@
                             <td class="border px-4 py-2">{{ row.id }}</td>
                             <td class="border px-4 py-2 truncate ...">{{ row.title }}</td>
                             <td class="border px-4 py-2 truncate ...">{{ row.url }}</td>
-                            <td class="border px-4 py-2"><a :href="row.short_url" target="_blank">{{ row.short_url }}</a></td>
+                            <td class="border px-4 py-2 truncate ..."><a :href="row.short_url" target="_blank">{{ row.short_url }}</a></td>
                             <td class="border px-4 py-2">
                                 <button @click="edit(row)" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mr-2 rounded">Edit</button>
                                 <button @click="deleteRow(row)" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 mr-2 rounded">Delete</button>
